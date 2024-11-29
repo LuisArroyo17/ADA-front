@@ -1,17 +1,19 @@
-.main{
-    background-color: #2F4D8F;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    margin: 0;
+.main {
+    background-color: #001862; 
+    color: white; 
+    height: 100vh; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
 }
-    
-.encabezado{
-    background-color:#2F4D8F ;
-    color: text-white;
-    padding: 1rem;
+   
+.logo {
+    margin-left: auto;
+    margin-right: auto;
+    width: 220px;
+    margin-bottom: 1rem;
 }
+
 
 .form {
     background-color: #B0e2ff; 

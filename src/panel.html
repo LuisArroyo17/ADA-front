@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Code Analyzer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* Custom CSS */
+        .sidebar {
+            background-color: #8ab6d6; /* Light blue background */
+            width: 30%; /* Adjust sidebar width */
+            min-height: 100vh; /* Full viewport height */
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .content {
+            width: 70%;
+            background-color: #0c1e4f; /* Dark blue background */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh; /* Full viewport height */
+        }
+
+        .logout {
+            position: absolute;
+            top: 1rem;
+            right: 2rem;
+            color: white;
+            font-size: 0.875rem;
+            text-transform: uppercase;
+        }
+
+        .file-icon {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0.5rem;
+        }
+
+        .file-icon i {
+            font-size: 2rem;
+            color: #000; /* Black color for file icons */
+        }
+
+        .button-primary {
+            width: 12rem;
+            margin: 0.5rem 0;
+            padding: 0.75rem;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 9999px;
+            background-color: #ffffff;
+            color: #0c1e4f;
+            text-align: center;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .button-primary:hover {
+            background-color: transparent;
+            color: #ffffff;
+            border: 2px solid #ffffff;
+        }
+    </style>
+</head>
+
+<body class="flex">
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <img src="https://placehold.co/100x100" alt="User Profile Picture" class="rounded-full mb-4">
+        <p class="text-center font-semibold text-lg">LUIS YAZID<br>ARROYO VASQUEZ</p>
+        
+        <h3 class="mt-8 font-semibold text-center">SUBIDOS RECIENTEMENTE:</h3>
+        <div class="grid grid-cols-2 gap-2 mt-4">
+            <div class="file-icon">
+                <i class="far fa-file-alt"></i>
+                <p class="text-xs">ARCHIVO01</p>
+            </div>
+            <div class="file-icon">
+                <i class="far fa-file-alt"></i>
+                <p class="text-xs">ARCHIVO01</p>
+            </div>
+            <div class="file-icon">
+                <i class="far fa-file-alt"></i>
+                <p class="text-xs">ARCHIVO01</p>
+            </div>
+            <div class="file-icon">
+                <i class="far fa-file-alt"></i>
+                <p class="text-xs">ARCHIVO01</p>
+            </div>
+            <div class="file-icon">
+                <i class="far fa-file-alt"></i>
+                <p class="text-xs">ARCHIVO01</p>
+            </div>
+            <div class="file-icon">
+                <i class="far fa-file-alt"></i>
+                <p class="text-xs">ARCHIVO01</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content relative">
+        <a href="#" class="logout">Cerrar sesión</a>
+
+        <!-- Logo and Title -->
+        <div class="flex flex-col items-center mb-8">
+            <img src="/img/logo.png" alt="Code Analyzer Logo" class="mb-4">
+        </div>
+
+        <!-- Buttons -->
+        <a href="#" class="button-primary">COMPARADOR</a>
+        <a href="#" class="button-primary">REPORTES</a>
+    </div>
+</body>
+
+</html>
